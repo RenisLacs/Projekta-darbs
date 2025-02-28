@@ -1,26 +1,30 @@
-# Projekta-darb
-I just lost my daaaaawg
-Tēma - Datu vizualizācija par spēlēm
-Izstrādātai programmai implementētām dažādām datu apstrādes un vizualizācijas funkcijas - Kārlis
-  Tiek izmantota datu kopa, kurā ir vismaz 50 rindas
-  Tiek izveidoti dažādas datu vizualizācijas (jābūt dažādu grafiku veidiem dažādiem datiem)
-  Tiek lietototi datu filtri
-  Tiek lietotas histogrammas
-  Ir iespējams ielādēt datus kā CSV
-Radoša pieeja - Reinis
-  Tiek izmantotas bibliotēkas, kas nav Flask, Pandas un matplotlib
-  Jebkas, kas piesaistītu vērtētāja uzmanību
-  Tā var būt kāda interesanta ideja pašam projektam vai skaists front-end, vai dinamiska datu augšupielāde vai sarežģīta datu/datubāzes struktūra.
-Izsrādei ir jāizmanto Flask un Izstrādātai programmai jābūt Web lietotnei - Artūrs
-  Aplikācijai ir jābūt vairākām lapām (skatiem)
-  Datu vizualizācijām jāparādās Web aplikācijā (nedrīkst likt vienkārši screenshotus, bildēm jābūt uzģenerētām)
-  Programmas ar tikai konsoles interfeisu netiek ieskaitīta
-  Projektā jāimplementē vienkārša datubāze
-    Datubāzei ir jābūt vismaz vienai tabulai
-    Jābūt vismaz diviem dažādiem vaicājumiem datubāzei (drīkst izmantot ORM kā peewee)
-Noslēguma prezentācija - sagatavos prezentāciju (Aksels), prezentēs visi
-  Jāsagatavo video prezentācija (vismaz 5min) par projektu
-  Prezentācijā jāparāda kā strādā projekts un arī jāpakomentē kods
-  Prezentācijai jābūt kvalitatīvai
-  Prezentācijā nav obligāti jārunā visiem grupas dalībniekiem, bet uz titullapas jābūt visu dalībnieku vārdiem
-  
+Datu apstrāde un vizualizācija – Kārlis
+✅ Tiek izmantota datu kopa ar vismaz 50 rindām
+✅ Izveidotas dažādas datu vizualizācijas (dažādi grafiku veidi dažādiem datiem)
+✅ Datu filtri, kas ļauj pielāgot skatāmos datus
+✅ Histogrammas kā viena no vizualizācijas metodēm
+✅ Iespēja ielādēt datus no CSV
+
+Radoša pieeja – Reinis
+✅ Izmantotas bibliotēkas, kas nav Flask, Pandas un Matplotlib
+✅ Projekts ietver radošus un inovatīvus risinājumus, kas piesaista uzmanību:
+
+Interesanta ideja pašam projektam
+Skaists un moderns front-end dizains
+Dinamiska datu augšupielāde
+Sarežģīta datu/datubāzes struktūra
+Web lietotne un Flask integrācija – Artūrs
+✅ Projekts ir Flask tīmekļa lietotne
+✅ Aplikācijā ir vairākas lapas (skati)
+✅ Datu vizualizācijas tiek ģenerētas un attēlotas tīmekļa aplikācijā (nedrīkst būt tikai ekrānuzņēmumi)
+✅ Netiek pieļauta tikai konsoles saskarne
+✅ Projekts satur vienkāršu datubāzi:
+
+Datubāzē ir vismaz viena tabula
+Implementēti vismaz divi dažādi datu vaicājumi (drīkst izmantot ORM, piemēram, Peewee)
+Noslēguma prezentācija – Aksels (sagatavošana), visi (prezentācija)
+✅ Jāsagatavo vismaz 5 minūšu video prezentācija par projektu
+✅ Prezentācijā jāparāda projekta darbība un koda skaidrojums
+✅ Prezentācijai jābūt kvalitatīvai un labi strukturētai
+✅ Nav obligāti, ka runā visi, bet titullapā jābūt visu dalībnieku vārdiem
+
