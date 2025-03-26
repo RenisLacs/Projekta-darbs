@@ -1,0 +1,16 @@
+nutrition-diary/
+├── app.py
+├── models.py
+├── requirements.txt
+├── nutrition_data.csv
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── uploads/
+├── templates/
+│   ├── base.html
+│   ├── dashboard.html
+│   ├── diary.html
+│   ├── import.html
+│   └── reports.html
+└── README.md
