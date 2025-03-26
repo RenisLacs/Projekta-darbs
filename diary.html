@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Dienasgrāmata{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-6">
+        <h2>Pārtikas dienasgrāmata</h2>
+    </div>
+    <div class="col-md-6 text-end">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEntryModal">
+            Pievienot jaunu ierakstu
+        </button>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Datums</th>
+                <th>Ēdiens</th>
+                <th>Kalorijas</th>
+                <th>Olbaltumvielas (g)</th>
+                <th>Ogļhidrāti (g)</th>
+                <th>Tauki (g)</th>
+                <th>Darbības</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+            <tr>
+                <td>{{ entry.date.strftime('%Y-%m-%d') }}</td>
+                <td>{{ entry.food_name }}</td>
+                <td>{{ entry.calories }}</td>
+                <td>{{ entry.protein }}</td>
+                <td>{{ entry.carbs }}</td>
+                <td>{{ entry.fat }}</td>
+                <td>
+                    <form action="{{ url_for('delete_entry', id=entry.id) }}" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Vai tiešām vēlaties dzēst šo ierakstu?')">
+                            Dzēst
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Pievienošanas modālais logs -->
+<div class="modal fade" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addEntryModalLabel">Pievienot jaunu ēdienu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('diary') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Datums</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="food_name" class="form-label">Ēdiens</label>
+                        <input type="text" class="form-control" id="food_name" name="food_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="calories" class="form-label">Kalorijas</label>
+                        <input type="number" step="0.1" class="form-control" id="calories" name="calories" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="protein" class="form-label">Olbaltumvielas (g)</label>
+                        <input type="number" step="0.1" class="form-control" id="protein" name="protein" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="carbs" class="form-label">Ogļhidrāti (g)</label>
+                        <input type="number" step="0.1" class="form-control" id="carbs" name="carbs" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fat" class="form-label">Tauki (g)</label>
+                        <input type="number" step="0.1" class="form-control" id="fat" name="fat" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aizvērt</button>
+                    <button type="submit" class="btn btn-primary">Saglabāt</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Datu importēšana{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Datu importēšana no CSV faila</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Instrukcijas</h5>
+        <p class="card-text">
+            Augšupielādējiet CSV failu ar sekojošām kolonnām:
+            <ul>
+                <li><code>date</code> - datums formātā YYYY-MM-DD</li>
+                <li><code>food_name</code> - ēdiena nosaukums</li>
+                <li><code>calories</code> - kaloriju daudzums</li>
+                <li><code>protein</code> - olbaltumvielu daudzums gramos</li>
+                <li><code>carbs</code> - ogļhidrātu daudzums gramos</li>
+                <li><code>fat</code> - tauku daudzums gramos</li>
+            </ul>
+        </p>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="file" class="form-label">CSV fails</label>
+                <input class="form-control" type="file" id="file" name="file" accept=".csv" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Importēt</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Informācijas panelis{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Informācijas panelis</h2>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Kopējais ierakstu skaits</h5>
+                <p class="card-text display-4">{{ total_entries }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Vidējais kaloriju daudzums</h5>
+                <p class="card-text display-4">{{ avg_calories }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                Kaloriju patēriņš pēdējās 7 dienās
+            </div>
+            <div class="card-body">
+                <img src="{{ calories_plot }}" class="img-fluid" alt="Kaloriju grafiks">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Makroelementu sadalījums pēdējās 7 dienās
+            </div>
+            <div class="card-body">
+                <img src="{{ macros_plot }}" class="img-fluid" alt="Makroelementu grafiks">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Populārākie ēdieni
+            </div>
+            <div class="card-body">
+                <img src="{{ top_foods_plot }}" class="img-fluid" alt="Populārākie ēdieni">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

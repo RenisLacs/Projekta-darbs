@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Pārskati{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Pārskati un analīze</h2>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Kopējais makroelementu sadalījums
+            </div>
+            <div class="card-body">
+                <img src="{{ macros_pie }}" class="img-fluid" alt="Makroelementu sadalījums">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Kaloriju patēriņš pa dienām
+            </div>
+            <div class="card-body">
+                <img src="{{ daily_calories_plot }}" class="img-fluid" alt="Kaloriju patēriņš">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                Kaloriju sadalījums pa ēdieniem
+            </div>
+            <div class="card-body">
+                <img src="{{ calories_hist }}" class="img-fluid" alt="Kaloriju histogramma">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
