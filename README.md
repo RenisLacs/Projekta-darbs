@@ -1,4 +1,4 @@
-Datu apstrāde un vizualizācija – Kārlis
+Programma par uztura dienasgrāmatu – Kārlis
  Tiek izmantota datu kopa ar vismaz 50 rindām
  Izveidotas dažādas datu vizualizācijas (dažādi grafiku veidi dažādiem datiem)
  Datu filtri, kas ļauj pielāgot skatāmos datus
