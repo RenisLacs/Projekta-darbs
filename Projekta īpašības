@@ -1,0 +1,24 @@
+1. Vairāki skati:
+  Dienasgrāmata (ierakstu pievienošana, apskate, dzēšana)
+  Informācijas panelis (vizuāli dati par uzturu)
+  Pārskati (datu analīze un vizualizācija)
+  Datu importēšana (no CSV faila)
+2. Datu vizualizācijas:
+  Līniju diagrammas (kaloriju patēriņš pa dienām)
+  Stabiņu diagrammas (makroelementu sadalījums)
+  Sektoru diagrammas (populārākie ēdieni, makroelementu proporcijas)
+  Histogrammas (kaloriju sadalījums)
+3. Datu filtri:
+  Datu grupēšana pa dienām
+  Datu agregācijas funkcijas (summa, vidējais, skaits)
+4. Datu bāze:
+  SQLAlchemy ORM
+  Divas tabulas (User, FoodEntry)
+  Vairāki vaicājumi (grupēšana, filtrēšana, agregācija)
+5. Datu importēšana:
+  CSV failu augšupielāde
+  Datu validācija un apstrāde
+6. Papildu funkcijas:
+  Responsīvs dizains (Bootstrap)
+  Lietotāja saskarne ar modāliem logiem  
+  Flash paziņojumi
