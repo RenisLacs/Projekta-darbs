@@ -7,12 +7,11 @@ Programma par uztura dienasgrāmatu – Kārlis, Aksels
 
 Radoša pieeja – Reinis
  Izmantotas bibliotēkas, kas nav Flask, Pandas un Matplotlib
-  Projekts ietver radošus un inovatīvus risinājumus, kas piesaista uzmanību:
-
-Interesanta ideja pašam projektam
-Skaists un moderns front-end dizains
-Dinamiska datu augšupielāde
-Sarežģīta datu/datubāzes struktūra
+ Projekts ietver radošus un inovatīvus risinājumus, kas piesaista uzmanību:
+ Interesanta ideja pašam projektam
+ Skaists un moderns front-end dizains
+ Dinamiska datu augšupielāde
+ Sarežģīta datu/datubāzes struktūra
 Web lietotne un Flask integrācija – Artūrs, Reinis
  Projekts ir Flask tīmekļa lietotne
  Aplikācijā ir vairākas lapas (skati)
@@ -21,4 +20,7 @@ Web lietotne un Flask integrācija – Artūrs, Reinis
  Projekts satur vienkāršu datubāzi:
    Datubāzē ir vismaz viena tabula
    Implementēti vismaz divi dažādi datu vaicājumi (drīkst izmantot ORM, piemēram, Peewee)
-
+Noslēguma prezentācija - Artūrs
+  Jāsagatavo video prezentācija (vismaz 3min) par projektu
+  Prezentācijā parāda kā strādā projekts un arī jāpakomentē kods
+  
